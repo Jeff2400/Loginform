@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "dist",
+    "allowJs": true,
+    "target": "ES6",  // Changed from ES5 to ES6
+    // "moduleResolution": "node",  // Helps TypeScript with module resolution
+    "esModuleInterop": true,  // Ensures compatibility with default imports
+    "strict": true  // Optional: Enables strict type checking
+  },
+  "include":["src/**/*"],
+  "exclude":["node_modules"]
+}
