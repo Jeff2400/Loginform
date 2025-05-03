@@ -14,7 +14,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api', adminRoutes);
 
-  sequelize.sync({ force:false })
+  sequelize.sync({ force:true })
 .then(() => {
     console.log('Database connected');
     app.listen(PORT, () => {
