@@ -1,0 +1,215 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.App {
+    text-align: auto;
+  }
+  :root {
+    --primaryBackground: #57a8ce;
+    --secondaryBackground: #984acc;
+    --primaryColor: #e0a80d;
+    --greyDark: #7d8792;
+    --headingColor: #6565;
+    --white: #fff;
+    --black: #000;
+    --sliver: #bac8d3;
+  }
+
+  body {
+    background-color: var(--primaryBackground);
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+  }.container {
+    max-width: 80%;
+    margin: auto;
+  }
+  .flexsb {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*---------header-------------*/
+header {
+    background-color: var(--headingColor);
+    height: 50px;
+    line-height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+
+  header a {
+    margin-left: 40px;
+    text-decoration: #8a6747;
+    font-weight: 600;
+    color: #1b2018;
+    opacity: 1;
+  }
+  a:hover {
+    color: #e415a6; /* Change color on hover */
+    
+  }
+  header .logo img{
+    height: 50px;      /* Let the logo take full header height */
+   background-color: var(--headingColor);
+  }
+   .navmenu   {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    opacity: 1;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    color: var();
+    background-color: var(--headingColor);
+     display: contents;
+     border: none;
+     display: block;
+     height:50px
+  }
+  .icon {
+    font-size: 1.8rem;
+    color: white;
+  }
+  .navmenu {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+  height: calc(100vh - 50px);
+  width: 200px;
+  background-color:var(--headingColor);
+  position: fixed;
+  top: 50px;
+  right: 0;
+  z-index: 500;
+  }
+  @media screen and (max-width: 768px) {
+    header .nav {
+      display: none;
+    }
+    header a {
+      width: 100%;
+      display: block;
+      color: var(--white);
+    }
+    .toggle {
+      display: block;
+      font-size: 25px;
+      background: none;
+    }
+    .navmenu {
+      display: block;
+      position: absolute;
+      top: 10vh;
+      left: 0;
+      width: 100%;
+      background-color: var(--headingColor);
+    }
+  }
+  
+  /*---------header-------------*/
+  /*---------loginform-------------*/
+  
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f7fa;
+}
+
+.form {
+    background: #ffffff;
+    color: #111827;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+
+.form input ,
+.form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form input::placeholder {
+  color: #6b7280;
+}
+
+.form input:focus 
+.form select:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.form button {
+    padding: 12px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #2563eb;
+}
+
+p{
+    color: #000;
+    font-size:16px;
+    font-style: "Poppins", sans-serif;
+    margin-top: 0%;
+}
+
+.error-message {
+  color: #dc2626;
+  background-color: #ffe4e6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.alert {
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.alert.success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.alert.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+
+  /*---------loginform-------------*/
